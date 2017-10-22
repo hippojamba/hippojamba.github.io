@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on hippojamba</title>
+    <link>https://hippojamba.github.io/post/</link>
+    <description>Recent content in Posts on hippojamba</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 22 Oct 2017 18:47:43 +0200</lastBuildDate>
+    
+	<atom:link href="https://hippojamba.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Start SSH agent and init SSH key</title>
+      <link>https://hippojamba.github.io/post/commands-for-starting-ssh-agent-and-init-ssh-key./</link>
+      <pubDate>Sun, 22 Oct 2017 18:47:43 +0200</pubDate>
+      
+      <guid>https://hippojamba.github.io/post/commands-for-starting-ssh-agent-and-init-ssh-key./</guid>
+      <description>Adding SSH-key to the SSH-agent Stage 1 $ eval &amp;quot;$(ssh-agent -s )&amp;quot; Agent pid NNNN  Stage 2 $ ssh-add ~/.ssh/xxxx  More information here</description>
+    </item>
+    
+    <item>
+      <title>Initial wasd</title>
+      <link>https://hippojamba.github.io/post/mind-over-matter-is-magic/</link>
+      <pubDate>Wed, 13 Sep 2017 14:59:55 +0200</pubDate>
+      
+      <guid>https://hippojamba.github.io/post/mind-over-matter-is-magic/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
