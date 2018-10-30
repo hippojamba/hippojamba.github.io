@@ -1,6 +1,3 @@
-
-# Created by https://www.gitignore.io/api/vim,hugo,linux
-
 ### Hugo ###
 hugo.exe
 /public/
@@ -32,4 +29,3 @@ Session.vim
 # auto-generated tag files
 tags
 
-# End of https://www.gitignore.io/api/vim,hugo,linux
