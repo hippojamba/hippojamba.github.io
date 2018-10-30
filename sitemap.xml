@@ -1,73 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
-  <url>
-    <loc>https://hippojamba.github.io/post/commands-for-starting-ssh-agent-and-init-ssh-key./</loc>
-    <lastmod>2017-10-22T18:47:43+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://hippojamba.github.io/post/mind-over-matter-is-magic/</loc>
-    <lastmod>2017-09-13T14:59:55+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://hippojamba.github.io/authors/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://hippojamba.github.io/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://hippojamba.github.io/tags/cheatsheet/</loc>
-    <lastmod>2017-10-22T18:47:43+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://hippojamba.github.io/tags/dubs/</loc>
-    <lastmod>2017-09-13T14:59:55+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://hippojamba.github.io/categories/hippojamba/</loc>
-    <lastmod>2017-09-13T14:59:55+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://hippojamba.github.io/post/</loc>
-    <lastmod>2017-10-22T18:47:43+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://hippojamba.github.io/categories/ssh/</loc>
-    <lastmod>2017-10-22T18:47:43+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://hippojamba.github.io/tags/ssh/</loc>
-    <lastmod>2017-10-22T18:47:43+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://hippojamba.github.io/tags/</loc>
-    <lastmod>2017-10-22T18:47:43+02:00</lastmod>
-    <priority>0</priority>
-  </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
     <loc>https://hippojamba.github.io/</loc>
     <lastmod>2017-10-22T18:47:43+02:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hippojamba.github.io/post/Commands%20for%20starting%20ssh%20agent%20and%20init%20ssh-key./</loc>
+    <lastmod>2017-10-22T18:47:43+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hippojamba.github.io/post/Mind%20over%20matter%20is%20magic/</loc>
+    <lastmod>2017-09-13T14:59:55+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hippojamba.github.io/post/Free%20nice-to-have%20extensions./</loc>
   </url>
   
 </urlset>

@@ -6,26 +6,55 @@
     <description>Recent content on hippojamba</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sun, 22 Oct 2017 18:47:43 +0200</lastBuildDate>
-    
-	<atom:link href="https://hippojamba.github.io/index.xml" rel="self" type="application/rss+xml" />
-    
+    <atom:link href="https://hippojamba.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Start SSH agent and init SSH key</title>
-      <link>https://hippojamba.github.io/post/commands-for-starting-ssh-agent-and-init-ssh-key./</link>
+      <link>https://hippojamba.github.io/post/Commands%20for%20starting%20ssh%20agent%20and%20init%20ssh-key./</link>
       <pubDate>Sun, 22 Oct 2017 18:47:43 +0200</pubDate>
       
-      <guid>https://hippojamba.github.io/post/commands-for-starting-ssh-agent-and-init-ssh-key./</guid>
-      <description>Adding SSH-key to the SSH-agent Stage 1 $ eval &amp;quot;$(ssh-agent -s )&amp;quot; Agent pid NNNN  Stage 2 $ ssh-add ~/.ssh/xxxx  More information here</description>
+      <guid>https://hippojamba.github.io/post/Commands%20for%20starting%20ssh%20agent%20and%20init%20ssh-key./</guid>
+      <description>
+
+&lt;h1 id=&#34;adding-ssh-key-to-the-ssh-agent:76e76aa90e6657bb85e35d59b5a5c2a3&#34;&gt;Adding SSH-key to the SSH-agent&lt;/h1&gt;
+
+&lt;h2 id=&#34;stage-1:76e76aa90e6657bb85e35d59b5a5c2a3&#34;&gt;Stage 1&lt;/h2&gt;
+$ eval &#34;$(ssh-agent -s )&#34;
+Agent pid NNNN
+
+&lt;h2 id=&#34;stage-2:76e76aa90e6657bb85e35d59b5a5c2a3&#34;&gt;Stage 2&lt;/h2&gt;
+$ ssh-add ~/.ssh/xxxx
+
+&lt;p&gt;More information &lt;a href=&#34;https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>Initial wasd</title>
-      <link>https://hippojamba.github.io/post/mind-over-matter-is-magic/</link>
+      <link>https://hippojamba.github.io/post/Mind%20over%20matter%20is%20magic/</link>
       <pubDate>Wed, 13 Sep 2017 14:59:55 +0200</pubDate>
       
-      <guid>https://hippojamba.github.io/post/mind-over-matter-is-magic/</guid>
-      <description></description>
+      <guid>https://hippojamba.github.io/post/Mind%20over%20matter%20is%20magic/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;../imgs/dubs.jpg&#34; alt=&#34;Should be dubs&#34; title=&#34;dubs&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Visual Studio Extensions</title>
+      <link>https://hippojamba.github.io/post/Free%20nice-to-have%20extensions./</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hippojamba.github.io/post/Free%20nice-to-have%20extensions./</guid>
+      <description>
+
+&lt;h1 id=&#34;visual-studio-extensoins:f551d668f566ab19b990b465bda67b3c&#34;&gt;Visual Studio Extensoins&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/JosefPihrt/Roslynator&#34; target=&#34;_blank&#34;&gt;Roslynator&lt;/a&gt; - A free alternative to ReSharper.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.codemaid.net/&#34; target=&#34;_blank&#34;&gt;Codemaid&lt;/a&gt; - Cleanup and simplify your code.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/mike-ward/VSColorOutput&#34; target=&#34;_blank&#34;&gt;VSColorOutput&lt;/a&gt; - Colorize VS output, makes it easier to read.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
   </channel>

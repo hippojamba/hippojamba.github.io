@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>VS on hippojamba</title>
+    <link>https://hippojamba.github.io/categories/vs/</link>
+    <description>Recent content in VS on hippojamba</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <atom:link href="https://hippojamba.github.io/categories/vs/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Visual Studio Extensions</title>
+      <link>https://hippojamba.github.io/post/Free%20nice-to-have%20extensions./</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hippojamba.github.io/post/Free%20nice-to-have%20extensions./</guid>
+      <description>
+
+&lt;h1 id=&#34;visual-studio-extensoins:f551d668f566ab19b990b465bda67b3c&#34;&gt;Visual Studio Extensoins&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/JosefPihrt/Roslynator&#34; target=&#34;_blank&#34;&gt;Roslynator&lt;/a&gt; - A free alternative to ReSharper.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.codemaid.net/&#34; target=&#34;_blank&#34;&gt;Codemaid&lt;/a&gt; - Cleanup and simplify your code.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/mike-ward/VSColorOutput&#34; target=&#34;_blank&#34;&gt;VSColorOutput&lt;/a&gt; - Colorize VS output, makes it easier to read.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
