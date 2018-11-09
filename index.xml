@@ -17,8 +17,7 @@
       <pubDate>Wed, 31 Oct 2018 08:48:23 +0100</pubDate>
       
       <guid>https://hippojamba.github.io/posts/static-site/</guid>
-      <description>Free static site using Hugo and Github pages This is a guide to get you started with a free static webpage using Hugo and Github pages.
-Prerequisites  Github account Git version 2.8 or higher Latest version of Hugo  Ubuntus repos for Hugo is maintained by Canonical and will provied you with an outdated version, therefore we will do this manually.
+      <description>Free static site using Hugo and Github pages This is a guide to get you started with a free static webpage using Hugo and Github pages. Prerequisites  Github account Git version 2.8 or higher Latest version of Hugo  Ubuntus repos for Hugo is maintained by Canonical and will provied you with an outdated version, therefore we will do this manually.
 Note: For the theme Tale we need the extended version of Hugo.</description>
     </item>
     
