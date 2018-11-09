@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+		<title>
+				Free static site using Hugo and Github pages &middot; My New Hugo Site
+		</title>
+	
+		
+  		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+	
+		
+		<link rel="icon" type="image/png" sizes="32x32" href="http://replace-this-with-your-hugo-site.com/images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="http://replace-this-with-your-hugo-site.com/images/favicon-16x16.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="http://replace-this-with-your-hugo-site.com/images/apple-touch-icon.png">
+	
+		
+		<link href="" rel="alternate" type="application/rss+xml" title="My New Hugo Site" />
+	</head>
+	
+    <body>
+        		<nav class="nav">
+			<div class="nav-container">
+				<a href="/">
+					<h2 class="nav-title">My New Hugo Site</h2>
+				</a>
+				<ul>
+    <li><a href="/about">About</a></li>
+    <li><a href="/">Posts</a></li>
+</ul>
+			</div>
+		</nav>
+
+        
+
+<main>
+	<div class="post">
+		<div class="post-info">
+    <span>Written by</span>
+        
+        <br>
+        <span>on&nbsp;</span><time datetime="2018-10-31 08:48:23 &#43;0100 STD">October 31, 2018</time>
+</div>
+		<h1 class="post-title">Free static site using Hugo and Github pages</h1>
+<div class="post-line"></div>
+
+		
+
+		
+
+<h1 id="free-static-site-using-hugo-and-github-pages">Free static site using Hugo and Github pages</h1>
+
+<hr />
+
+<p>This is a guide to get you started with a free static webpage using Hugo and Github pages.</p>
+
+<h2 id="prerequisites">Prerequisites</h2>
+
+<hr />
+
+<ul>
+<li>Github account</li>
+<li>Git version 2.8 or higher</li>
+<li>Latest version of Hugo</li>
+</ul>
+
+<p>Ubuntus repos for Hugo is maintained by Canonical and will provied you with an outdated version, therefore we will do this manually.</p>
+
+<p><em>Note: For the theme <a href="https://github.com/EmielH/tale-hugo">Tale</a> we need the extended version of Hugo.</em></p>
+
+<h3 id="download-the-latest-hugo-package">Download the latest Hugo package</h3>
+
+<p>Start by downloading the latest hugo package <code>wget https://github.com/gohugoio/hugo/releases/download/v0.50/hugo_extended_0.50_Linux-64bit.deb</code></p>
+
+<p>Install the downloaded package <code>sudo dpkg -i hugo_extended_0.50_Linux-64bit.deb</code>. If the latest version isn&rsquo;t &ldquo;0.50&rdquo; just replace it with the latest version number.</p>
+
+<h2 id="setup">Setup</h2>
+
+<hr />
+
+<p>Create a repository on github.com to hold the source files, this is where you will be creating content, configure your site, add/edit posts, etc. Clone your repository and run the following commands.</p>
+
+<p>Initiate a new site <code>hugo new site [sitename]</code></p>
+
+<p>Move files from [sitename] folder to the repository root <code>cp -a [sitename]/. .</code></p>
+
+<p>Add the <a href="https://github.com/EmielH/tale-hugo">Tale</a> theme to your site.</p>
+
+<p><code>git submodule add https://github.com/EmielH/tale-hugo</code></p>
+
+<p>Tell Hugo to use the theme Tale <code>echo 'theme = &quot;tale&quot;' &gt;&gt; config.toml</code></p>
+
+<h2 id="create-a-post">Create a post</h2>
+
+<hr />
+
+<p>To create a new post run <code>hugo new posts/some-name.md</code>, the new post will be placed in the posts folder inside the content folder which is placed in the root.</p>
+
+<h2 id="run-locally">Run locally</h2>
+
+<hr />
+
+<p>To test your site locally we want to start a local server, we do this by running the following command <code>hugo server -t tale</code>.</p>
+
+<p><em>Note: If your some-name.md post have the &lsquo;draft = true&rsquo; set it will not appear.</em></p>
+
+
+		
+	</div>
+
+	<div class="pagination">
+
+		<a href="#" class="top">Top</a>
+	</div>
+</main>
+
+
+        		<footer>
+			<span>
+			&copy; <time datetime="2018-11-09 12:28:43.5450878 &#43;0100 STD m=&#43;0.174817001">2018</time> . Made with <a href='https://gohugo.io'>Hugo</a> using the <a href='https://github.com/EmielH/tale-hugo/'>Tale</a> theme.
+			</span>
+		</footer>
+
+    </body>
+</html>
