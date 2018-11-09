@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
 		<title>
-				Free static site using Hugo and Github pages &middot; My New Hugo Site
+				Free static site using Hugo and Github pages &middot; Nest
 		</title>
 	
 		
@@ -13,19 +13,19 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
 	
 		
-		<link rel="icon" type="image/png" sizes="32x32" href="http://replace-this-with-your-hugo-site.com/images/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="http://replace-this-with-your-hugo-site.com/images/favicon-16x16.png">
-		<link rel="apple-touch-icon" sizes="180x180" href="http://replace-this-with-your-hugo-site.com/images/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="https://hippojamba.github.io/images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="https://hippojamba.github.io/images/favicon-16x16.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="https://hippojamba.github.io/images/apple-touch-icon.png">
 	
 		
-		<link href="" rel="alternate" type="application/rss+xml" title="My New Hugo Site" />
+		<link href="" rel="alternate" type="application/rss+xml" title="Nest" />
 	</head>
 	
     <body>
         		<nav class="nav">
 			<div class="nav-container">
 				<a href="/">
-					<h2 class="nav-title">My New Hugo Site</h2>
+					<h2 class="nav-title">Nest</h2>
 				</a>
 				<ul>
     <li><a href="/about">About</a></li>
@@ -107,6 +107,12 @@
 
 <p><em>Note: If your some-name.md post have the &lsquo;draft = true&rsquo; set it will not appear.</em></p>
 
+<h2 id="deploy">Deploy</h2>
+
+<p>Create a new repository named [USERNAME].github.io, this is where you site will be hosted. In your respository where your hugo site is installed you can remove your public folder with <code>rm -rf public</code> and then add the submodule to your site repository with <code>git submodule add -f https://github.com/[USERNAME]/[USERNAME].github.io.git public</code>.</p>
+
+<p>To build your site run <code>hugo -t tale</code>, where &ldquo;tale&rdquo; being the name of the theme. Navigate to your public folder, add all files, commit and push.</p>
+
 
 		
 	</div>
@@ -120,7 +126,7 @@
 
         		<footer>
 			<span>
-			&copy; <time datetime="2018-11-09 12:28:43.5450878 &#43;0100 STD m=&#43;0.174817001">2018</time> . Made with <a href='https://gohugo.io'>Hugo</a> using the <a href='https://github.com/EmielH/tale-hugo/'>Tale</a> theme.
+			&copy; <time datetime="2018-11-09 12:38:36.9277614 &#43;0100 STD m=&#43;0.133817001">2018</time> . Made with <a href='https://gohugo.io'>Hugo</a> using the <a href='https://github.com/EmielH/tale-hugo/'>Tale</a> theme.
 			</span>
 		</footer>
 

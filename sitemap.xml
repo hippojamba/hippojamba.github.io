@@ -3,29 +3,29 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://replace-this-with-your-hugo-site.com/posts/static-site/</loc>
+    <loc>https://hippojamba.github.io/posts/static-site/</loc>
     <lastmod>2018-10-31T08:48:23+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://replace-this-with-your-hugo-site.com/categories/</loc>
+    <loc>https://hippojamba.github.io/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://replace-this-with-your-hugo-site.com/</loc>
-    <lastmod>2018-10-31T08:48:23+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://replace-this-with-your-hugo-site.com/posts/</loc>
+    <loc>https://hippojamba.github.io/</loc>
     <lastmod>2018-10-31T08:48:23+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://replace-this-with-your-hugo-site.com/tags/</loc>
+    <loc>https://hippojamba.github.io/posts/</loc>
+    <lastmod>2018-10-31T08:48:23+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hippojamba.github.io/tags/</loc>
     <priority>0</priority>
   </url>
   
