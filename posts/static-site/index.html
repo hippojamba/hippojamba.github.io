@@ -126,9 +126,17 @@
 
 <hr />
 
-<p>Create a new repository named [USERNAME].github.io, this is where your site will be hosted. In your respository where your hugo site is installed you can remove your public folder with <code>rm -rf public</code> and then add the submodule to your site repository with <code>git submodule add -f https://github.com/[USERNAME]/[USERNAME].github.io.git public</code>.</p>
+<p>Create a new repository and name it <code>[username].github.io</code>, this is where your site will be hosted.</p>
 
-<p>To build your site run <code>hugo -t tale</code>, where &ldquo;tale&rdquo; being the name of the theme. Navigate to your public folder, add all files, commit and push.
+<p>In your respository where your hugo site is installed you can remove your public folder with <code>rm -rf public</code></p>
+
+<p>When the public folder has been removed we want to add the submodule to your sitename repository and bind it to the public folder by running:
+<code>git submodule add -f https://github.com/[username]/[username].github.io.git public</code></p>
+
+<p>To build your site run <code>hugo -t tale</code>, where &ldquo;tale&rdquo; being the name of the theme. Your <code>public</code> folder should now be filled with a generated site, navigate to it and run the following commands to publish the site i.e. pushing <code>public</code> to the <code>[username].github.io</code> repository: <br />
+<code>git add .</code> <br />
+<code>git commit -m &quot;some message&quot;</code> <br />
+<code>git push</code>
 <br />
 <br />
 <br /></p>
@@ -137,7 +145,9 @@
 
 <hr />
 
-<p>To alter the footer navigate to themes/[theme]/layouts/partials and open footer.html, when you do changes in here it will only appear locally if the theme is used with submodules.
+<p>To alter the for example the footer we navigate to <code>themes/[theme]/layouts/partials</code> and open footer.html.</p>
+
+<p><em>Note: When you do changes in here it will only appear locally if the theme is used with submodules. By adding <code>ignore = dirty</code> setting to <code>.gitmodules</code> will ignore the change and it will not be displayed when running <code>git status</code></em>
 <br />
 <br />
 <br /></p>
@@ -155,7 +165,7 @@
 
         		<footer>
 			<span>
-			&copy; <time datetime="2018-11-09 14:57:15.5602438 &#43;0100 STD m=&#43;0.146009001">2018</time> hippojamba.
+			&copy; <time datetime="2018-11-12 09:48:47.3410514 &#43;0100 STD m=&#43;0.407038001">2018</time> hippojamba.
 			</span>
 		</footer>
 
