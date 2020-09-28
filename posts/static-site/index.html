@@ -12,8 +12,8 @@
 <meta property="og:description" content="Guide to get you started with a free static webpage using Hugo and Github pages." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://oliversabler.github.io/posts/static-site/" />
-<meta property="article:published_time" content="2018-10-31T08:48:23+01:00" />
-<meta property="article:modified_time" content="2018-10-31T08:48:23+01:00" />
+<meta property="article:published_time" content="2020-09-28T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-09-28T00:00:00+00:00" />
 
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Free static site using Hugo and Github pages"/>
@@ -148,7 +148,6 @@
     <li><a href="#create-a-post">Create a post</a></li>
     <li><a href="#run-locally">Run locally</a></li>
     <li><a href="#deploy">Deploy</a></li>
-    <li><a href="#configuration">Configuration</a></li>
   </ul>
 </nav>
     </div>
@@ -165,7 +164,7 @@
         
         <div class="postdate">
           
-          <time datetime="2018-10-31 08:48:23 &#43;0100 CET" itemprop="datePublished">2018-10-31</time>
+          <time datetime="2020-09-28 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-09-28</time>
           
         </div>
         
@@ -188,11 +187,13 @@
 <li>Git version 2.8 or higher</li>
 <li>Latest version of Hugo</li>
 </ul>
-<p>Ubuntus repos for Hugo is maintained by Canonical and will provied you with an outdated version, therefore we will do this manually.</p>
-<p><em>Note: For the theme <a href="https://github.com/EmielH/tale-hugo">Tale</a> we need the extended version of Hugo.</em></p>
 <h3 id="download-the-latest-hugo-package">Download the latest Hugo package</h3>
+<h4 id="ubuntu">Ubuntu</h4>
+<p>Ubuntus repos for Hugo is maintained by Canonical and will provied you with an outdated version, therefore we need to install it manually.</p>
 <p>Start by downloading the latest hugo package <code>wget https://github.com/gohugoio/hugo/releases/download/v0.50/hugo_extended_0.50_Linux-64bit.deb</code></p>
-<p>Install the downloaded package <code>sudo dpkg -i hugo_extended_0.50_Linux-64bit.deb</code>. If the latest version isn&rsquo;t &ldquo;0.50&rdquo; just replace it with the latest version number.
+<p>Install the downloaded package <code>sudo dpkg -i hugo_extended_0.50_Linux-64bit.deb</code>. If the latest version isn&rsquo;t &ldquo;0.50&rdquo; just replace it with the latest version number.</p>
+<h4 id="mac">Mac</h4>
+<p>Install <a href="https://brew.sh/">brew</a> and run <code>brew install hugo</code> to install Hugo.
 <!-- raw HTML omitted -->
 <!-- raw HTML omitted -->
 <!-- raw HTML omitted --></p>
@@ -201,9 +202,9 @@
 <p>Create a repository on github.com to hold the source files, this is where you will be creating content, configure your site, add/edit posts, etc. Clone your repository and run the following commands.</p>
 <p>Initiate a new site <code>hugo new site [sitename]</code></p>
 <p>Move files from [sitename] folder to the repository root <code>cp -a [sitename]/. .</code></p>
-<p>Add the <a href="https://github.com/EmielH/tale-hugo">Tale</a> theme to your site.</p>
-<p><code>git submodule add https://github.com/EmielH/tale-hugo</code></p>
-<p>Tell Hugo to use the theme Tale <code>echo 'theme = &quot;tale&quot;' &gt;&gt; config.toml</code>
+<p>Clone the <a href="https://github.com/monkeyWzr/hugo-theme-cactus">Cactus</a> theme to your site.</p>
+<p><code>git clone https://github.com/monkeyWzr/hugo-theme-cactus.git themes/cactus</code></p>
+<p>Tell Hugo to use the theme Tale <code>echo 'theme = &quot;cactus&quot;' &gt;&gt; config.toml</code>
 <!-- raw HTML omitted -->
 <!-- raw HTML omitted -->
 <!-- raw HTML omitted --></p>
@@ -226,17 +227,10 @@
 <p>In your respository where your hugo site is installed you can remove your public folder with <code>rm -rf public</code></p>
 <p>When the public folder has been removed we want to add the submodule to your sitename repository and bind it to the public folder by running:
 <code>git submodule add -f https://github.com/[username]/[username].github.io.git public</code></p>
-<p>To build your site run <code>hugo -t tale</code>, where &ldquo;tale&rdquo; being the name of the theme. Your <code>public</code> folder should now be filled with a generated site, navigate to it and run the following commands to publish the site i.e. pushing <code>public</code> to the <code>[username].github.io</code> repository: <!-- raw HTML omitted -->
+<p>To build your site run <code>hugo -t cactus</code>, where &ldquo;tale&rdquo; being the name of the theme. Your <code>public</code> folder should now be filled with a generated site, navigate to it and run the following commands to publish the site i.e. pushing <code>public</code> to the <code>[username].github.io</code> repository: <!-- raw HTML omitted -->
 <code>git add .</code> <!-- raw HTML omitted -->
 <code>git commit -m &quot;some message&quot;</code> <!-- raw HTML omitted -->
 <code>git push</code>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted --></p>
-<h2 id="configuration">Configuration</h2>
-<hr>
-<p>To alter the for example the footer we navigate to <code>themes/[theme]/layouts/partials</code> and open footer.html.</p>
-<p><em>Note: When you do changes in here it will only appear locally if the theme is used with submodules. By adding <code>ignore = dirty</code> setting to <code>.gitmodules</code> will ignore the change and it will not be displayed when running <code>git status</code></em>
 <!-- raw HTML omitted -->
 <!-- raw HTML omitted -->
 <!-- raw HTML omitted --></p>
@@ -272,7 +266,6 @@
     <li><a href="#create-a-post">Create a post</a></li>
     <li><a href="#run-locally">Run locally</a></li>
     <li><a href="#deploy">Deploy</a></li>
-    <li><a href="#configuration">Configuration</a></li>
   </ul>
 </nav>
     </div>
