@@ -1,24 +1,32 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Nest</title>
-    <link>https://hippojamba.github.io/posts/</link>
+    <link>https://oliversabler.github.io/posts/</link>
     <description>Recent content in Posts on Nest</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 31 Oct 2018 08:48:23 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 25 Sep 2020 09:50:03 +0200</lastBuildDate>
     
-	<atom:link href="https://hippojamba.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://oliversabler.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Test</title>
+      <link>https://oliversabler.github.io/posts/test/</link>
+      <pubDate>Fri, 25 Sep 2020 09:50:03 +0200</pubDate>
+      
+      <guid>https://oliversabler.github.io/posts/test/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Free static site using Hugo and Github pages</title>
-      <link>https://hippojamba.github.io/posts/static-site/</link>
+      <link>https://oliversabler.github.io/posts/static-site/</link>
       <pubDate>Wed, 31 Oct 2018 08:48:23 +0100</pubDate>
       
-      <guid>https://hippojamba.github.io/posts/static-site/</guid>
-      <description>Free static site using Hugo and Github pages This is a guide to get you started with a free static webpage using Hugo and Github pages. Prerequisites  Github account Git version 2.8 or higher Latest version of Hugo  Ubuntus repos for Hugo is maintained by Canonical and will provied you with an outdated version, therefore we will do this manually.
-Note: For the theme Tale we need the extended version of Hugo.</description>
+      <guid>https://oliversabler.github.io/posts/static-site/</guid>
+      <description>Guide to get you started with a free static webpage using Hugo and Github pages.</description>
     </item>
     
   </channel>
