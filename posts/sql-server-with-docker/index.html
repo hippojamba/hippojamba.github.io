@@ -214,8 +214,10 @@ if (!doNotTrack) {
 <p><code>-p</code> is specifying the port we are going to use, in our case <code>1433:1433</code> which is commonly used for a SQL Database engine.</p>
 <p>The last parameter we us is the Docker image <code>mcr.microsoft.com/mssql/server:latest</code>, if you desire a different version you can find what versions are available (here)[https://hub.docker.com/_/microsoft-mssql-server]</p>
 <h2 id="testing-the-mssql-container-manually">Testing the mssql container manually</h2>
-<p>To test the container we can create a database and table manually through the CLI. To run an interactive bash shell inside our <strong>my-test-container</strong> container we run <code>sudo docker exec -it my-test-container &quot;bash&quot;</code> in the terminal. <code>-it</code> is <code>-i</code> and <code>-t</code> combined, more about what they mean can be found <a href="https://docs.docker.com/engine/reference/commandline/exec/">here</a>.</p>
-<p>When we have a shell inside the container we can connect to the <strong>sqlcmd</strong> by running this command: <code>/opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P &quot;AsomewhatSTRONGpw10€&quot;</code>. Now we can start typing some SQL commands.</p>
+<p>To test the container we can create a database and table manually through the CLI. To run an interactive bash shell inside our <strong>my-test-container</strong> container we run <code>sudo docker exec -it my-test-container &quot;bash&quot;</code> in the terminal. <code>-it</code> is the shorthand options of <code>--interactive</code> and <code>--tty</code> combined, more about what they mean can be found <a href="https://docs.docker.com/engine/reference/commandline/exec/">here</a>.</p>
+<p>When we have a shell inside the container we can run the <strong>sqlcmd</strong> with the command below.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">/opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P <span style="color:#e6db74">&#34;AsomewhatSTRONGpw10€&#34;</span>
+</code></pre></div><p>Now the <strong>sqlcmd</strong> is running and we can start typing some SQL commands.</p>
 <p>Let&rsquo;s create the database:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">DATABASE</span> TestDB
 <span style="color:#66d9ef">GO</span>
