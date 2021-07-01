@@ -464,7 +464,7 @@
     color: #383838;
     font-display: swap;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     font-family: "JetBrains Mono", monospace;
     line-height: 1.725;
     text-rendering: geometricPrecision;
@@ -1566,7 +1566,7 @@
   }
   pre {
     overflow-x: auto;
-    padding: 10px 15px;
+    padding: 0;
     padding-bottom: 0;
     border: 1px dotted #666;
     border-radius: 4px;
@@ -1589,7 +1589,7 @@
   .highlight {
     overflow-x: auto;
     margin: 1rem 0;
-    padding: 10px 15px;
+    padding: 0;
     border-radius: 4px;
     background: #fafafa;
     font-family: "JetBrains Mono", monospace;
@@ -1636,7 +1636,7 @@
   }
   .highlight pre {
     margin: 0;
-    padding: 0;
+    padding: 5px;
     border: none;
     background: none;
   }

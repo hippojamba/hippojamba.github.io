@@ -207,37 +207,25 @@
 <p>Move files from [sitename] folder to the repository root <code>cp -a [sitename]/. .</code></p>
 <p>Clone the <a href="https://github.com/monkeyWzr/hugo-theme-cactus">Cactus</a> theme to your site.</p>
 <p><code>git clone https://github.com/monkeyWzr/hugo-theme-cactus.git themes/cactus</code></p>
-<p>Tell Hugo to use the theme Cactus <code>echo 'theme = &quot;cactus&quot;' &gt;&gt; config.toml</code>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted --></p>
+<p>Tell Hugo to use the theme Cactus <code>echo 'theme = &quot;cactus&quot;' &gt;&gt; config.toml</code></p>
 <h2 id="create-a-post">Create a post</h2>
 <hr>
-<p>To create a new post run <code>hugo new posts/some-name.md</code>, the new post will be placed in the posts folder inside the content folder which is placed in the root.
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted --></p>
+<p>To create a new post run <code>hugo new posts/some-name.md</code>, the new post will be placed in the posts folder inside the content folder which is placed in the root.</p>
 <h2 id="run-locally">Run locally</h2>
 <hr>
 <p>To test your site locally we want to start a local server, we do this by running the following command <code>hugo server -t cactus</code>.</p>
-<p>Note: If your some-name.md post have the &lsquo;draft = true&rsquo; set it will not appear.
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted --></p>
+<p>Note: If your some-name.md post have the &lsquo;draft = true&rsquo; set it will not appear.</p>
 <h2 id="deploy">Deploy</h2>
 <hr>
 <p>Create a new repository and name it <code>[username].github.io</code>, this is where your site will be hosted.</p>
 <p>In your respository where your hugo site is installed you can remove your public folder with <code>rm -rf public</code></p>
 <p>When the public folder has been removed we want to add the submodule to your sitename repository and bind it to the public folder by running:
 <code>git submodule add -f https://github.com/[username]/[username].github.io.git public</code></p>
-<p>To build your site run <code>hugo -t cactus</code>, where &ldquo;cactus&rdquo; being the name of the theme. Your <code>public</code> folder should now be filled with a generated site, navigate to it and run the following commands to publish the site i.e. pushing <code>public</code> to the <code>[username].github.io</code> repository: <!-- raw HTML omitted -->
-<code>git add .</code> <!-- raw HTML omitted -->
-<code>git commit -m &quot;some message&quot;</code> <!-- raw HTML omitted -->
-<code>git push</code>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted --></p>
-
+<p>To build your site run <code>hugo -t cactus</code>, where &ldquo;cactus&rdquo; being the name of the theme. Your <code>public</code> folder should now be filled with a generated site, navigate to it and run the following commands to publish the site i.e. pushing <code>public</code> to the <code>[username].github.io</code> repository:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git add .
+git commit -m <span style="color:#e6db74">&#34;some message&#34;</span>
+git push
+</code></pre></div>
     </div>
   </article>
 
