@@ -199,7 +199,7 @@ if (!doNotTrack) {
     <div class="content" itemprop="articleBody">
       <h2 id="introduction">Introduction</h2>
 <p>Working with SQL Server in Docker have several benfits. It&rsquo;s extremely fast to get up and running, we basically type one command with some environment variables and we are up and running. It&rsquo;s cross-plattform, so doesn&rsquo;t matter if your team mates are working in Linux, MacOS, Windows or any other OS. We can skip writing a long step-by-step readme of how to setup the server by providing a Dockerfile. If we want to create some integrationtests we can spin up a SQL Server run tests against it and tear it down in matter of seconds, why not go further and automate the process in our CI/CD workflow? And this is just to mention a few.</p>
-<p>In this article we will start with exploring the basics; how to get SQL Server running in Docker. You will learn how to create and connect to a database, create a table and insert some data into it and then get a vizualization of the values inside the table. Everything will be done manually through the CLI.</p>
+<p>In this article we will start with exploring the basics; how to get SQL Server running in Docker. You will learn how to create and connect to a database, create a table and insert some data into it and then get a vizualization of the values inside the table. Everything will be done manually using your shell of choice.</p>
 <h2 id="docker">Docker</h2>
 <p>First off we need a SQL Server running in Docker for our project. We can do this with one line, so type the following command into your terminal to run the mssql container.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker run -d --name my-test-container -e <span style="color:#e6db74">&#39;ACCEPT_EULA=Y&#39;</span> -e <span style="color:#e6db74">&#39;SA_PASSWORD=AsomewhatSTRONGpw10€&#39;</span> -p 1433:1433 mcr.microsoft.com/mssql/server:latest
@@ -214,7 +214,7 @@ if (!doNotTrack) {
 <p><code>-p</code> is specifying the port we are going to use, in our case <code>1433:1433</code> which is commonly used for a SQL Database engine.</p>
 <p>The last parameter we us is the Docker image <code>mcr.microsoft.com/mssql/server:latest</code>, if you desire a different version you can find what versions are available (here)[https://hub.docker.com/_/microsoft-mssql-server]</p>
 <h2 id="testing-the-mssql-container-manually">Testing the mssql container manually</h2>
-<p>To test the container we can create a database and table manually through the CLI. To run an interactive bash shell inside our <strong>my-test-container</strong> container we run <code>sudo docker exec -it my-test-container &quot;bash&quot;</code> in the terminal. <code>-it</code> is the shorthand options of <code>--interactive</code> and <code>--tty</code> combined, more about what they mean can be found <a href="https://docs.docker.com/engine/reference/commandline/exec/">here</a>.</p>
+<p>To test the container we can create a database and table manually through the <strong>sqlcmd</strong>. But first we must run an interactive bash shell inside our <strong>my-test-container</strong> container we run <code>sudo docker exec -it my-test-container &quot;bash&quot;</code> in the terminal. <code>-it</code> is the shorthand options of <code>--interactive</code> and <code>--tty</code> combined, more about what they mean can be found <a href="https://docs.docker.com/engine/reference/commandline/exec/">here</a>.</p>
 <p>When we have a shell inside the container we can run the <strong>sqlcmd</strong> with the command below.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">/opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P <span style="color:#e6db74">&#34;AsomewhatSTRONGpw10€&#34;</span>
 </code></pre></div><p>Now the <strong>sqlcmd</strong> is running and we can start typing some SQL commands.</p>
@@ -237,7 +237,7 @@ if (!doNotTrack) {
 ----------- -------------------------------------------------- -----------
           1 Zingo                                                      200
           2 Trocadero                                                   30
-</code></pre><p>To exit the CLI just type <code>exit</code> and press enter.</p>
+</code></pre><p>To exit the <strong>sqlcmd</strong> just type <code>exit</code> and press enter.</p>
 
     </div>
   </article>
