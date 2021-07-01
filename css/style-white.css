@@ -1566,7 +1566,7 @@
   }
   pre {
     overflow-x: auto;
-    padding: 0;
+    padding: 10px 15px;
     padding-bottom: 0;
     border: 1px dotted #666;
     border-radius: 4px;
