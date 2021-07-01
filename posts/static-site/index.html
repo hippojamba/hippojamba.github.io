@@ -145,6 +145,7 @@
     <div id="toc">
       <nav id="TableOfContents">
   <ul>
+    <li><a href="#introduction">Introduction</a></li>
     <li><a href="#prerequisites">Prerequisites</a>
       <ul>
         <li><a href="#download-the-latest-hugo-package">Download the latest Hugo package</a></li>
@@ -180,12 +181,8 @@
 
   
     <div class="content" itemprop="articleBody">
-      <h1 id="free-static-site-using-hugo-and-github-pages">Free static site using Hugo and Github pages</h1>
-<hr>
-<p>This is a guide to get you started with a free static webpage using Hugo and Github pages. 
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted --></p>
+      <h2 id="introduction">Introduction</h2>
+<p>This is a guide to get you started with a free static webpage using Hugo and Github pages.</p>
 <h2 id="prerequisites">Prerequisites</h2>
 <hr>
 <ul>
@@ -210,7 +207,7 @@
 <p>Move files from [sitename] folder to the repository root <code>cp -a [sitename]/. .</code></p>
 <p>Clone the <a href="https://github.com/monkeyWzr/hugo-theme-cactus">Cactus</a> theme to your site.</p>
 <p><code>git clone https://github.com/monkeyWzr/hugo-theme-cactus.git themes/cactus</code></p>
-<p>Tell Hugo to use the theme Tale <code>echo 'theme = &quot;cactus&quot;' &gt;&gt; config.toml</code>
+<p>Tell Hugo to use the theme Cactus <code>echo 'theme = &quot;cactus&quot;' &gt;&gt; config.toml</code>
 <!-- raw HTML omitted -->
 <!-- raw HTML omitted -->
 <!-- raw HTML omitted --></p>
@@ -222,7 +219,7 @@
 <!-- raw HTML omitted --></p>
 <h2 id="run-locally">Run locally</h2>
 <hr>
-<p>To test your site locally we want to start a local server, we do this by running the following command <code>hugo server -t tale</code>.</p>
+<p>To test your site locally we want to start a local server, we do this by running the following command <code>hugo server -t cactus</code>.</p>
 <p>Note: If your some-name.md post have the &lsquo;draft = true&rsquo; set it will not appear.
 <!-- raw HTML omitted -->
 <!-- raw HTML omitted -->
@@ -233,7 +230,7 @@
 <p>In your respository where your hugo site is installed you can remove your public folder with <code>rm -rf public</code></p>
 <p>When the public folder has been removed we want to add the submodule to your sitename repository and bind it to the public folder by running:
 <code>git submodule add -f https://github.com/[username]/[username].github.io.git public</code></p>
-<p>To build your site run <code>hugo -t cactus</code>, where &ldquo;tale&rdquo; being the name of the theme. Your <code>public</code> folder should now be filled with a generated site, navigate to it and run the following commands to publish the site i.e. pushing <code>public</code> to the <code>[username].github.io</code> repository: <!-- raw HTML omitted -->
+<p>To build your site run <code>hugo -t cactus</code>, where &ldquo;cactus&rdquo; being the name of the theme. Your <code>public</code> folder should now be filled with a generated site, navigate to it and run the following commands to publish the site i.e. pushing <code>public</code> to the <code>[username].github.io</code> repository: <!-- raw HTML omitted -->
 <code>git add .</code> <!-- raw HTML omitted -->
 <code>git commit -m &quot;some message&quot;</code> <!-- raw HTML omitted -->
 <code>git push</code>
@@ -263,6 +260,7 @@
     <div id="toc-footer" style="display: none">
       <nav id="TableOfContents">
   <ul>
+    <li><a href="#introduction">Introduction</a></li>
     <li><a href="#prerequisites">Prerequisites</a>
       <ul>
         <li><a href="#download-the-latest-hugo-package">Download the latest Hugo package</a></li>
